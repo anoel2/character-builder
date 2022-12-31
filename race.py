@@ -1,1 +1,27 @@
-
+race = [
+    "Aarakocra",
+    "Dragonborn",
+    "Hill Dwarf",
+    "Mountain Dwarf",
+    "High Elf",
+    "Wood Elf",
+    "Eladrin Elf",
+    "Dark Elf",
+    "Air Genasi",
+    "Earth Genasi",
+    "Fire Genasi",
+    "Water Genasi",
+    "Rock Gnome",
+    "Forest Gnome",
+    "Deep Gnome",
+    "Goliath",
+    "Half-Elf",
+    "Half-Orc",
+    "Lightfoot Halfling",
+    "Stout Halfling",
+    "Human",
+    "Variant Human",
+    "Tiefling",
+    "Variant Aasimar"
+    ]
+]
