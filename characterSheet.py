@@ -44,7 +44,34 @@ class NewCharacter:
             # Save character data to a file
             with open(f"{self.name}.json", "w") as f:
                 json.dump(self.data, f)
+                            # Initialize character inventory
+            self.inventory = CharacterInventory(self.name)
 
+            # Store character data in a dictionary
+            self.data = {
+                'race': self.race,
+                'class': self.characterClass,
+                'name': self.name,
+                'age': self.age,
+                'height': self.height,
+                'weight': self.weight,
+                'strength': self.strength,
+                'dexterity': self.dexterity,
+                'constitution': self.constitution,
+                'intelligence': self.intelligence,
+                'wisdom': self.wisdom,
+                'charisma': self.charisma,
+                'inventory': self.inventory.items,
+            }
+
+            # Save character data to a file
+            with open(f"{self.name}.json", "w") as f:
+                json.dump(self.data, f)
+
+        # Create a command to access the character's inventory
+        self.commands = {
+            "open pack": self.inventory.list_items
+        }
 
 # Create a new character or load existing character
 character = NewCharacter()
